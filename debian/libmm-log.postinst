@@ -1,0 +1,15 @@
+#!/bin/sh
+if [ ${USER} == "root" ]
+then
+   # Change file owner
+   # 1. libraries
+   # 2. executables	
+   # 3. configurations
+	chown root:root /opt/etc/logmessage.conf
+fi
+
+# Change file permissions
+# 1. libraries
+# 2. executables
+# 3. configurations
+chmod 644 /opt/etc/logmessage.conf

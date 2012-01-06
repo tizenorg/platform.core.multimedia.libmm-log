@@ -1,0 +1,36 @@
+Source: libmm-log
+Section: libs
+Priority: extra
+Maintainer: Shin Seung Bae <seungbae.shin@samsung.com>, JongHyuk Choi <jhchoi.choi@samsung.com>
+Build-Depends: debhelper (>= 5), autotools-dev, iniparser-dev, dlog-dev
+Standards-Version: 3.7.2
+Homepage: N/A
+
+Package: libmm-log
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdlog-0
+Description: Multimedia Framework LOG Library
+Version: 2.0
+ 
+Package: libmm-log-dev
+XB-Public-Package: no
+Section: libdevel
+Architecture: any
+Depends: libmm-log (= ${Source-Version}), libmm-log-sdk-dev
+Description: Multimedia Framework LOG Library (DEV)
+Version: 2.0
+
+Package: libmm-log-sdk-dev
+Section: libdevel
+Architecture: any
+Depends: libmm-log (= ${Source-Version}), dlog-dev
+Description: Multimedia Framework LOG Library (SDK-DEV)
+Version: 2.0
+
+Package: libmm-log-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmm-log (= ${Source-Version})
+Description: Multimedia Framework LOG Library (DEV) for debug (unstripped)
+Version: 2.0

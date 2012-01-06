@@ -1,0 +1,3 @@
+@PREFIX@/bin/*
+@PREFIX@/lib/*.so*
+/opt/etc/logmessage.conf
