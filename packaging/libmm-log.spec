@@ -43,16 +43,24 @@ export classerror=RED
 export clsascritical=RED
 export classassert=RED
 
-%configure --prefix=%{_prefix} --enable-dlog
+%configure --disable-static \
+    --prefix=%{_prefix} --enable-dlog
 
 make %{?jobs:-j%jobs}
 
 %install
+rm -rf %{buildroot}
 %make_install
+
+
+
 
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
+
+
+
 
 
 %files
