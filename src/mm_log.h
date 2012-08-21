@@ -67,6 +67,7 @@ typedef enum {
     LOG_MEDIACALL  = 0x00080000,
     LOG_SESSIONMGR = 0x00100000,
     LOG_RADIO	   = 0x00200000,
+    LOG_TRANSCODE   = 0x00300000,
     LOG_ALL        = 0xFFFFFFFF,
 }log_owner_t;
 
@@ -107,7 +108,7 @@ typedef enum {
 
 #else
 #define log_print_dbg(owner, class, msg, args...)
-#define log_assert_dbg(condition) (condition)
+#define log_assert_dbg(condition)
 #endif
 
 #ifndef USE_DLOG
@@ -137,6 +138,7 @@ typedef enum {
 		case LOG_MEDIACALL  : SLOG (class, "MMFW_MEDIACALL", msg, ##args); break; \
 		case LOG_SESSIONMGR : SLOG (class, "MMFW_SESSIONMGR", msg, ##args); break; \
 		case LOG_RADIO	    : SLOG (class, "MMFW_RADIO", msg, ##args); break; \
+		case LOG_TRANSCODE	    : SLOG (class, "MMFW_TRANSCODE", msg, ##args); break; \
 		default             : SLOG (class, "MMFW_UNKNOWN", msg, ##args); break; \
 		} \
 	} while(0)

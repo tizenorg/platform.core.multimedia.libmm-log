@@ -44,7 +44,8 @@
 
 //#define	ENABLE_DEBUG_MESSAGE
 
-#include <iniparser.h>
+//#include <iniparser/iniparser.h> //:-:hyunil46.park 090203
+#include <iniparser.h> //:+:hyunil46.park 090203
 
 #ifdef ENABLE_DEBUG_MESSAGE	
 /* debug-message-framework */

@@ -1,8 +1,245 @@
+libmm-log (0.1.3-3) unstable; urgency=low
+
+  * Add Transcode dlog
+  * Git : slp/pkgs/l/libmm-log
+  * Tag : libmm-log_0.1.3-3
+
+ -- YoungHun Kim <yh8004.kim@samsung.com>  Fri, 06 Jul 2012 10:23:57 +0900
+
 libmm-log (0.1.3-2) unstable; urgency=low
 
+ * Remove unnecessary files install
+ * Git : 165.213.180.234:slp/pkgs/l/libmm-log
+ * Tag : libmm-log_0.1.3-2
+
+ -- Seungbae Shin <seungbae.shin@samsung.com> Sun, 17 Jun 2012 15:26:22 +0900
+
+libmm-log (0.1.3-1) unstable; urgency=low
+
+  * Replace boilerplate from LGPL to APACHE v2.0
+  * Git : 165.213.180.234:slp/pkgs/l/libmm-log
+  * Tag : libmm-log_0.1.3-1
+
+ -- Sangchul Lee <sc11.lee@samsung.com>  Fri, 02 Dec 2011 17:25:03 +0900
+
+libmm-log (0.1.3-0) unstable; urgency=low
+
+  * fix for prevent run #90 (strcpy)
+  * Git : 165.213.180.234:slp/pkgs/l/libmm-log
+  * Tag : libmm-log_0.1.3-0
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Mon, 10 Oct 2011 13:47:29 +0900
+
+libmm-log (0.1.2-13) unstable; urgency=low
+
+  * Code cleanup
+  * Git : 165.213.180.234:slp/pkgs/l/libmm-log
+  * Tag : libmm-log_0.1.2-13
+
+ -- Seungbae Shin <seungbae.shin@samsung.com> Wed, 13 Jul 2011 19:38:50 +0900
+
+libmm-log (0.1.2-12) unstable; urgency=low
+
+  * Fix CFLAGS
+  * Git : 165.213.180.234:slp/pkgs/l/libmm-log
+  * Tag : libmm-log_0.1.2-12
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Wed, 27 Apr 2011 11:11:26 +0900
+
+libmm-log (0.1.2-11) unstable; urgency=low
+
+  * Link iniparser as static library
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-11
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Fri, 03 Dec 2010 18:07:09 +0900
+
+libmm-log (0.1.2-10) unstable; urgency=low
+
+  * Remove iniparse dependancy from dev package
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-10
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Wed, 01 Dec 2010 12:32:12 +0900
+
+libmm-log (0.1.2-9) unstable; urgency=low
+
+  * Fix for as-needed
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-9
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Wed, 24 Nov 2010 20:48:58 +0900
+
+libmm-log (0.1.2-8) unstable; urgency=low
+
+  * Add fPIC and hash-style
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-8
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Thu, 18 Nov 2010 13:49:53 +0900
+
+libmm-log (0.1.2-7) unstable; urgency=low
+
+  * Fix assert bug
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-7
+
+ -- KwangHui Cho <kwanghui.cho@samsung.com>  Thu, 04 Nov 2010 12:09:21 +0900
+
+libmm-log (0.1.2-6) unstable; urgency=low
+
+  * Fix mistypo
+  * Git : 165.213.180.234:/git/slp/pkgs/libmm-log
+  * Tag : libmm-log_0.1.2-6
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Thu, 15 Jul 2010 10:43:39 +0900
+
+libmm-log (0.1.2-5) unstable; urgency=low
+
+  * Reupload
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-5
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Fri, 18 Jun 2010 12:18:49 +0900
+
+libmm-log (0.1.2-4) unstable; urgency=low
+
+  * Replace dlog-0 with libdlog-0
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-4
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Thu, 17 Jun 2010 12:14:39 +0900
+
+libmm-log (0.1.2-3) unstable; urgency=low
+
+  * FIX: import fail in i386
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-3
+
+ -- Heungsoon Rim <hs06.rim@samsung.com>  Wed, 16 Jun 2010 10:29:09 +0900
+
+libmm-log (0.1.2-2) unstable; urgency=low
+
+  * FIX build error about DLOG
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-2
+
+ -- Heungsoon Rim <hs06.rim@samsung.com>  Wed, 16 Jun 2010 08:34:08 +0900
+
+libmm-log (0.1.2-1) unstable; urgency=low
+
+  * Add Radio
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-1
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 15 Jun 2010 20:52:34 +0900
+
+libmm-log (0.1.2-0) unstable; urgency=low
+
+  * Update for DLOG update
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.2-0
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 15 Jun 2010 18:34:58 +0900
+
+libmm-log (0.1.1-4) unstable; urgency=low
+
+  * Modify postinst
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.1-4
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 15 Jun 2010 17:57:11 +0900
+
+libmm-log (0.1.1-3) unstable; urgency=low
+
+  * Add dlog cflags & libs to Makefile.am
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.1-3
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Thu, 06 May 2010 12:52:42 +0900
+
+libmm-log (0.1.1-2) unstable; urgency=low
+
+  * Add sdk package 
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.1-2
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Mon, 03 May 2010 17:53:31 +0900
+
+libmm-log (0.1.1-1) unstable; urgency=low
+
+  * Add postinst
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.1-1
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 20 Apr 2010 21:55:14 +0900
+
+libmm-log (0.1.1-0) unstable; urgency=low
+
+  * Use DLOG
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1.1-0
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Wed, 14 Apr 2010 20:44:54 +0900
+
+libmm-log (0.1-10) unstable; urgency=low
+
+  * Use DLOG
+  * Git : 165.213.180.234:/git/slp2.0/slp2.0-pkgs/libmm-log-0.1
+  * Tag : libmm-log_0.1-10
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 13 Apr 2010 12:19:36 +0900
+
+libmm-log (0.1-9) unstable; urgency=low
+
+  * Reupload
+
+ -- Wonhyung Cho <wh01.cho@samsung.com>  Thu, 25 Mar 2010 15:00:37 +0900
+
+libmm-log (0.1-8) unstable; urgency=low
+
+  * Toolchain Upgrade
+
+ -- Wonhyung Cho <wh01.cho@samsung.com>  Thu, 25 Mar 2010 13:39:34 +0900
+
+libmm-log (0.1-7) unstable; urgency=low
+
+  * Modify section to main
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Fri, 05 Mar 2010 16:17:26 +0900
+
+libmm-log (0.1-6) unstable; urgency=low
+
+  * Fix space align in conf file
+
+ -- KwangHui Cho <kwanghui.cho@samsung.com>  Fri, 19 Feb 2010 13:25:12 +0900
+
+libmm-log (0.1-5) unstable; urgency=low
+
+  * Fix for prevent (mknod return check & string terminate check)
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Wed, 17 Feb 2010 23:50:13 +0900
+
+libmm-log (0.1-4) unstable; urgency=low
+
+  * Add new owner "sessionmgr"
+
+ -- KwangHui Cho <kwanghui.cho@samsung.com>  Thu, 11 Feb 2010 11:46:03 +0900
+
+libmm-log (0.1-3) unstable; urgency=low
+
+  * Add a new owner for media-call
+
+ -- Seungbae Shin <seungbae.shin@samsung.com>  Tue, 02 Feb 2010 12:13:33 +0900
+
+libmm-log (0.1-2) unstable; urgency=low
+
+  * Add a new owner "mm-svr"
+
+ -- Jeon Hee Chul <heechul.jeon@samsung.com>  Tue, 26 Jan 2010 15:47:39 +0900
+
+libmm-log (0.1-1) unstable; urgency=low
+
   * Initial Release.
-  * Git : pkgs/l/libmm-log
-  * Tag : libmm-log_0.1.3-2
 
- -- Sangchul Lee <sc11.lee@samsung.com>  Wed, 07 Dec 2011 11:25:58 +0900
-
+ -- Shin Seung Bae <seungbae.shin@samsung.com>  Mon, 30 Nov 2009 21:30:45 +0900
