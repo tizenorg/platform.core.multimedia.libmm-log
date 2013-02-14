@@ -1,0 +1,74 @@
+; Log Manager Configuration File
+;
+; == setting SECTION ==
+; Set logfilter & output device.
+;
+; Direction
+;    Log none               = 0
+;    Write to Console       = 1
+;    Write to File          = 2
+;    Using Syslog           = 3
+;    Using Target framework = 4
+;    Using viewer           = 5
+;   ex) direction = 1;
+;
+; Filters is Bitmask
+;   owner is 0x01~0x80
+;   class is 0x01~0x08
+;   ex) ownerfilter = 0x0F
+;
+; Owner list
+;   Avsystem audio                  = 0x0001,
+;   Avsystem video                  = 0x0002,
+;   Avsystem camera                 = 0x0004,
+;   MM player                       = 0x0008,
+;   MM camcorder                    = 0x0010,
+;   MM sound                        = 0x0020,
+;   MM file                         = 0x0040,
+;   MM hardware abstraction layer   = 0x0080,
+;   MM image                        = 0x0100,
+;   MM Common                       = 0x0200,
+;   MM Avsystem sink                = 0x0400,
+;   MM Avsystem source              = 0x0800,
+;   MM Sound server                 = 0x1000,
+;   MM Sound plugin run type        = 0x2000,
+;   MM Sound plugin codec type      = 0x4000,
+;   Gstreamer Plugin  		    = 0x8000,
+;   Platform  			    = 0x10000,
+;   Codec      			    = 0x20000,
+;   MM Server     		    = 0x40000,
+;   MM Media Call  		    = 0x80000,
+;   MM Session Mgr          = 0x100000,
+;
+; Class list
+;   Infomation      = 0x01,
+;   Warning         = 0x02,
+;   Error           = 0x04,
+;   Critical Error  = 0x08,
+;
+; In write to file mode, Setting log file. In other mode will be ignore.
+; ex) logfile = /var/log/logmanager.log
+;
+; == color SECTION ==
+; Set log clolr by log class.
+; Only two directions used. - Console & viewer
+;
+; Color LIST
+;   BLACK, WHITE, RED, GREEN, BLUE, MAGENTA, CYAN, B_RED B_GREEN, B_GRAY,
+;   B_YELLOW, B_CYAN, B_MAGENTA. B_BLUE, REVERSE
+;   Prefix "B_" means background color. When this setting, charactor color is system default.
+;   When set charactor color, background color is system default.
+
+[setting]
+direction=@log_direction@
+ownerfilter=@log_ownermask@
+classfilter=@log_classmask@
+logfile=@log_filename@
+
+[color]
+classinfomation=@log_classinfomation@
+classwarning=@log_classwarning@
+classerror=@log_classerror@
+clsascritical=@log_clsascritical@
+classassert=@log_classassert@
+
