@@ -1,16 +1,13 @@
 Name:       libmm-log
 Summary:    Multimedia Framework LOG Lib
 Version:    0.1.5
-Release:    6
-Group:      TO_BE/FILLED_IN
-License:    TO BE FILLED IN
+Release:    7
+Group:      Multimedia/Multimedia Framework
+License:    Apache-2.0
 Source0:    libmm-log-%{version}.tar.gz
 BuildRequires:  pkgconfig(dlog)
-
 %description
 Multimedia Framework LOG Library
-
-
 
 %package devel
 Summary:    Multimedia Framework LOG Lib (devel)
@@ -19,25 +16,21 @@ Group:      Development/Libraries
 %description devel
 Multimedia Framework LOG Library (devel)
 
-
 %prep
 %setup -q -n %{name}-%{version}
-./autogen.sh
 
 
 %build
 export CFLAGS+=" -DUSE_DLOG"
-%configure --disable-static \
-    --prefix=%{_prefix} --enable-dlog
-
+./autogen.sh
+%configure --disable-static --enable-dlog
 make %{?jobs:-j%jobs}
 
 %install
-rm -rf %{buildroot}
 %make_install
 
 %files devel
 %defattr(-,root,root,-)
-/usr/include/mm_log/mm_log.h
-/usr/lib/pkgconfig/mm-log.pc
+%{_includedir}/mm_log/mm_log.h
+%{_libdir}/pkgconfig/mm-log.pc
 
