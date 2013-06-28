@@ -5,6 +5,7 @@ Release:    7
 Group:      Multimedia/Multimedia Framework
 License:    Apache-2.0
 Source0:    libmm-log-%{version}.tar.gz
+Source1001: 	libmm-log.manifest
 BuildRequires:  pkgconfig(dlog)
 %description
 Multimedia Framework LOG Library
@@ -18,6 +19,7 @@ Multimedia Framework LOG Library (devel)
 
 %prep
 %setup -q -n %{name}-%{version}
+cp %{SOURCE1001} .
 
 
 %build
@@ -30,6 +32,7 @@ make %{?jobs:-j%jobs}
 %make_install
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %{_includedir}/mm_log/mm_log.h
 %{_libdir}/pkgconfig/mm-log.pc
