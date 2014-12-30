@@ -39,6 +39,7 @@
 ;   MM Server     		    = 0x40000,
 ;   MM Media Call  		    = 0x80000,
 ;   MM Session Mgr          = 0x100000,
+;   MM Streamrecorder               = 0x400000,
 ;
 ; Class list
 ;   Infomation      = 0x01,

@@ -60,6 +60,17 @@ if test "x$USE_DLOG" = "xyes"; then
 	AC_SUBST(DLOG_LIBS)
 fi
 AM_CONDITIONAL(USE_DLOG, test "x$USE_DLOG" = "xyes")
+
+# check binary type for tizen engineer mode
+AC_ARG_ENABLE([engineer_mode],
+        AS_HELP_STRING([--enable-engineer_mode Turn on engineer_mode]),
+                [engineer_mode=yes],
+            engineer_mode=no)
+if test "x$engineer_mode" = "xyes" ; then
+        DEBUG_CFLAGS+=" -DTIZEN_ENGINEER_MODE"
+fi
+AC_SUBST(DEBUG_CFLAGS)
+
 dnl end --------------------------------------------------------------------
 
 # logmanager -- setting SECTION .. hyunil46.park@samsung.com

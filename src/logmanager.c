@@ -104,6 +104,10 @@
     case LOG_SERVER     : index = 20;break; \
     case LOG_MEDIACALL  : index = 21;break; \
     case LOG_SESSIONMGR : index = 22;break; \
+    case LOG_MIRACAST   : index = 23;break; \
+    case LOG_WFD        : index = 24;break; \
+    case LOG_STRRECORDER: index = 25;break; \
+    case LOG_JPEG_MSM8974: index = 26;break; \
     default             : index = 0; break; \
     }
 
@@ -132,6 +136,10 @@ static char * owner_res[] =
     "Server",
     "Media Call",
     "SessionMgr"
+    "Miracast",
+    "WFD",
+    "Stream Recorder",
+    "Jpeg_msm8974"
  };
 
 static char * class_res[] =
@@ -265,7 +273,7 @@ int init_logmanager(void)
 
         if (pdata->direction == LOG_DIRECTION_FILE)
         {
-            filename = iniparser_getstring(inifile, LOG_LOGFILE_KEY, NULL);
+            filename = iniparser_getstr(inifile, LOG_LOGFILE_KEY);
 
             if (filename && (strlen (filename) < sizeof (pdata->filename))) // :+:by prevent
             {
@@ -281,11 +289,11 @@ int init_logmanager(void)
             }
         }
         /* COLOR SETTINGS */
-        __conv_color(LOG_CLASS_INFO,      pdata->colors, iniparser_getstring(inifile, LOG_COLOR_INFO_KEY, NULL));
-        __conv_color(LOG_CLASS_WARNING,   pdata->colors, iniparser_getstring(inifile, LOG_COLOR_WARNING_KEY, NULL));
-        __conv_color(LOG_CLASS_ERR,       pdata->colors, iniparser_getstring(inifile, LOG_COLOR_ERROR_KEY, NULL));
-        __conv_color(LOG_CLASS_CRITICAL,  pdata->colors, iniparser_getstring(inifile, LOG_COLOR_CRITICAL_KEY, NULL));
-        __conv_color(LOG_CLASS_NONE,      pdata->colors, iniparser_getstring(inifile, LOG_COLOR_ASSERT_KEY, NULL));
+        __conv_color(LOG_CLASS_INFO,      pdata->colors, iniparser_getstr(inifile, LOG_COLOR_INFO_KEY));
+        __conv_color(LOG_CLASS_WARNING,   pdata->colors, iniparser_getstr(inifile, LOG_COLOR_WARNING_KEY));
+        __conv_color(LOG_CLASS_ERR,       pdata->colors, iniparser_getstr(inifile, LOG_COLOR_ERROR_KEY));
+        __conv_color(LOG_CLASS_CRITICAL,  pdata->colors, iniparser_getstr(inifile, LOG_COLOR_CRITICAL_KEY));
+        __conv_color(LOG_CLASS_NONE,      pdata->colors, iniparser_getstr(inifile, LOG_COLOR_ASSERT_KEY));
 
         iniparser_freedict(inifile);
     }
@@ -403,7 +411,7 @@ int reload_logmanager(void)
 
         if (pdata->direction == LOG_DIRECTION_FILE)
         {
-            filename = iniparser_getstring(inifile, LOG_LOGFILE_KEY, NULL);
+            filename = iniparser_getstr(inifile, LOG_LOGFILE_KEY);
 
             if (filename)
             {
@@ -416,11 +424,11 @@ int reload_logmanager(void)
             }
         }
         /* COLOR SETTINGS */
-        __conv_color(LOG_CLASS_INFO,      pdata->colors, iniparser_getstring(inifile, LOG_COLOR_INFO_KEY, NULL));
-        __conv_color(LOG_CLASS_WARNING,   pdata->colors, iniparser_getstring(inifile, LOG_COLOR_WARNING_KEY, NULL));
-        __conv_color(LOG_CLASS_ERR,       pdata->colors, iniparser_getstring(inifile, LOG_COLOR_ERROR_KEY, NULL));
-        __conv_color(LOG_CLASS_CRITICAL,  pdata->colors, iniparser_getstring(inifile, LOG_COLOR_CRITICAL_KEY, NULL));
-        __conv_color(LOG_CLASS_NONE,      pdata->colors, iniparser_getstring(inifile, LOG_COLOR_ASSERT_KEY, NULL));
+        __conv_color(LOG_CLASS_INFO,      pdata->colors, iniparser_getstr(inifile, LOG_COLOR_INFO_KEY));
+        __conv_color(LOG_CLASS_WARNING,   pdata->colors, iniparser_getstr(inifile, LOG_COLOR_WARNING_KEY));
+        __conv_color(LOG_CLASS_ERR,       pdata->colors, iniparser_getstr(inifile, LOG_COLOR_ERROR_KEY));
+        __conv_color(LOG_CLASS_CRITICAL,  pdata->colors, iniparser_getstr(inifile, LOG_COLOR_CRITICAL_KEY));
+        __conv_color(LOG_CLASS_NONE,      pdata->colors, iniparser_getstr(inifile, LOG_COLOR_ASSERT_KEY));
 
         iniparser_freedict(inifile);
     }

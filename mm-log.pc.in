@@ -8,4 +8,4 @@ Description : Multimedia Framework LOG Library
 Requires : dlog
 Version : @VERSION@
 Libs : -L${libdir} 
-Cflags : -I${includedir}/mm_log -DUSE_DLOG
+Cflags : -I${includedir}/mm_log -DUSE_DLOG @DEBUG_CFLAGS@
