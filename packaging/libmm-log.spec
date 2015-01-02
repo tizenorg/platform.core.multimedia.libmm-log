@@ -50,6 +50,11 @@ cp LICENSE.APLv2 %{buildroot}/usr/share/license/%{name}
 %files devel
 /usr/share/license/%{name}
 %defattr(-,root,root,-)
+<<<<<<< HEAD
+%{_includedir}/mm_log/mm_log.h
+%{_libdir}/pkgconfig/mm-log.pc
+=======
 /usr/include/mm_log/mm_log.h
 /usr/lib/pkgconfig/mm-log.pc
+>>>>>>> 396f150dee4bc5a14eaf416a49180d6f8a8cf954
 
