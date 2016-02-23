@@ -47,6 +47,7 @@ typedef enum {
     LOG_NONE       = 0x00000000,
     LOG_AVSYSTEM    = 0x00000001,
     LOG_SOUNDSERVER = 0x00000002,
+    LOG_FOCUSSERVER = 0x00000004,
     LOG_PLAYER     = 0x00000008,
     LOG_CAMCORDER  = 0x00000010,
     LOG_SOUND      = 0x00000020,
@@ -121,6 +122,7 @@ typedef enum {
 		switch(owner) { \
 		case LOG_AVSYSTEM    : _SLOG (class, "AVSYSTEM", msg, ##args); break; \
 		case LOG_SOUNDSERVER : _SLOG (class, "SOUND_SERVER", msg, ##args); break; \
+		case LOG_FOCUSSERVER : _SLOG (class, "FOCUS_SERVER", msg, ##args); break; \
 		case LOG_PLAYER     : _SLOG (class, "MM_PLAYER", msg, ##args); break; \
 		case LOG_CAMCORDER  : _SLOG (class, "MM_CAMCORDER", msg, ##args); break; \
 		case LOG_SOUND      : _SLOG (class, "MM_SOUND", msg, ##args); break; \

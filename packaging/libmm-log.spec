@@ -1,7 +1,7 @@
 Name:       libmm-log
 Summary:    Multimedia Framework LOG Lib
-Version:    0.1.9
-Release:    18
+Version:    0.1.10
+Release:    0
 VCS:        framework/multimedia/libmm-log#libmm-log_0.1.5-6-18-g93d660f3979dfbde901e8d2c6cdc6d9d78ce3442
 Group:      Multimedia/LOG
 License:    Apache-2.0
